@@ -6,25 +6,23 @@
   <title>Registro - Cantina Tech</title>
   <link rel="stylesheet" href="arquivos/css/registro.css"/>
   <link rel="icon" type="image/x-icon" href="arquivos/img/favicon.ico">
+  <script src="arquivos/script/registro.js"></script>
 </head> 
 <body>
   <div class="container">
   <img class="logo" src="arquivos/img/logo.png" alt="" srcset="">
     <div class="form">
 
-      <form action="home.html" method="post">
-  
-      <input type="email" placeholder="Nome" required>
-      <input type="email" placeholder="E-mail" required>
- 
-      <input type="password" id="password" name="password" placeholder="Senha" required>
-
+      <form id="signupForm">
+      <input type="text" class="name" id="name" placeholder="Nome" required>
+      <input type="email" class="email" id="email" placeholder="E-mail" required>
+      <input type="password" id="password" placeholder="Senha" required>
   <div>  
-    <button class="login" type="button" id="button" onclick="alert('Conta Criada')" value="Login">Criar Conta</button>
+    <button type="submit" id="button">Criar Conta</button>
   </div>
 <div>
     <div>
-      <p class="mensagem">Já têm uma conta?  <a href="index.html">Faça Login</a></p>
+      <p class="mensagem">Já têm uma conta?  <a href="login.html">Faça Login</a></p>
   </div>
   </form>
   </div>
