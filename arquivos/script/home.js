@@ -8,7 +8,6 @@ if(!user){
 const logout = document.querySelector('#logout')
 
 logout.addEventListener('click', ()=>{
-    alert('Você deslogou!')
     localStorage.removeItem('login_success')
     window.location.href = 'login.html'
 })

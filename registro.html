@@ -14,11 +14,15 @@
     <div class="form">
 
       <form id="signupForm">
-      <input type="text" class="name" id="name" placeholder="Nome" required>
+      <input type="text" class="name" id="name" placeholder="Nome" autofocus required>
       <input type="email" class="email" id="email" placeholder="E-mail" required>
       <input type="password" id="password" placeholder="Senha" required>
-  <div>  
+  <div  class="open-modal-button" onclick="openModal()">  
     <button type="submit" id="button">Criar Conta</button>
+  </div>
+  <div class="overlay" id="overlay" onclick="closeModal()"></div>
+  <div class="modal" id="modal">
+    <p>Cadastrado com Sucesso!</p>
   </div>
 <div>
     <div>

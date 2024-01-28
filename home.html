@@ -1,77 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cantina Tech - Compras</title>
-    <script src="arquivos/script/home.js"></script>
-    <style>
-        .sair {
-            text-align: right;
-        }        
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="arquivos/script/home.js"></script>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Playfair+Display:wght@500&display=swap');
 
-        header {
-            background-color: #4CAF50;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
-        }
+    body {
+      font-family: 'Oswald', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-        section {
-            margin: 2em;
-        }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
 
-        .produto {
-            border: 1px solid #ccc;
-            padding: 1em;
-            margin-bottom: 1em;
-            background-color: #fff;
-        }
+    #fruits {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
 
-        footer {
-            background-color: #4CAF50;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
+    .fruit {
+      text-align: center;
+      margin: 10px;
+    }
 
-    </style>
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    #cart {
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    #cart h2 {
+      color: #4CAF50;
+    }
+
+    #cart-items {
+      list-style: none;
+      padding: 0;
+    }
+
+    #cart-items li {
+      margin-bottom: 10px;
+    }
+    img {
+      width: 125px;
+      height: 125px;
+    }
+    #logout {
+            font-family: "Roboto", sans-serif;
+            text-transform: uppercase;
+            outline: 0;
+            background: #4ec4d9;
+            border: 2px;
+            color: #FFFFFF;
+            font-size: 14px;
+            cursor: pointer;
+        }
+  </style>
+  <title>Frutas</title>
 </head>
 <body>
 
-    <header>
-        <h1>Loja de Frutas</h1>
-        <button id="logout" class="sair">Sair da Conta</button>
-    </header>
+  <header>
+    <button id="logout" class="sair">Sair da Conta</button>
+    <h1>Frutas</h1>
+  </header>
 
-    <section>
-        <div class="produto">
-            <h2>Pão Artesanal</h2>
-            <p>Descrição do Pão Artesanal. Desfrute da perfeição crocante por fora e maciez irresistível por dentro com o nosso Pão Artesanal Multigrãos. Ideal para refeições diárias ou sanduíches gourmet. Peça agora e receba qualidade na sua porta..</p>
-            <p>Preço: R$ 50,00</p>
-            <button>Adicionar ao Carrinho</button>
-        </div>
+  <section id="fruits">
+    <div class="fruit">
+      <img src="arquivos/img/maca.jpeg" alt="Maçã">
+      <p>Maçã</p>
+      <p>R$ 200</p>
+      <button onclick="addToCart('Maçã')">+</button>
+    </div>
+    <div class="fruit">
+      <img src="arquivos/img/banan.jpg" alt="Banana">
+      <p>Banana</p>
+      <p>R$ 900</p>
+      <button onclick="addToCart('Banana')">+</button>
+    </div>
+    <div class="fruit">
+      <img src="arquivos/img/uva.png" alt="Uva">
+      <p>Uva</p>
+      <p>R$ 1200</p>
+      <button onclick="addToCart('Uva')">+</button>
+    </div>
+    <div class="fruit">
+      <img src="arquivos/img/pera.jpg" alt="Pêra">
+      <p>Pêra</p>
+      <p>R$ 1500</p>
+      <button onclick="addToCart('Pêra')">+</button>
+    </div>
 
-        <div class="produto">
-            <h2>Bananas Frescas</h2>
-            <p>Descrição das Bananas Suculentas. Colhidas no ponto perfeito de maturidade, nossas bananas oferecem um sabor doce e uma textura suculenta. Ideal para lanches saudáveis e repletas de potássio, elas são a escolha perfeita para a sua cesta de compras..</p>
-            <p>Preço: R$ 30,00</p>
-            <button>Adicionar ao Carrinho</button>
-        </div>
-    </section>
+  </section>
 
-    <footer>
-        <p>Loja Super Incrível - Todos os direitos reservados &copy; 2024</p>
-    </footer>
-
+  <section id="cart">
+    <h2>Carrinho de Compras</h2>
+    <ul id="cart-items"></ul>
+  </section>
+  <script>
+    function addToCart(fruit) {
+      const cartItems = document.getElementById('cart-items');
+      const listItem = document.createElement('li');
+      listItem.textContent = fruit;
+      cartItems.appendChild(listItem);
+    }
+  </script>
 </body>
 </html>
