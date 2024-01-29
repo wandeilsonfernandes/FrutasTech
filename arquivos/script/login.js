@@ -1,10 +1,10 @@
-document.addEventListener('DOMContentLoaded', () => {
 
-// Login
+document.addEventListener('DOMContentLoaded', () => {
 
 const loginForm = document.querySelector('#loginForm')
 loginForm.addEventListener('submit', (e)=>{
     e.preventDefault()
+
     const email = document.querySelector('#email').value
     const password = document.querySelector('#password').value
     const Users = JSON.parse(localStorage.getItem('users')) || []
