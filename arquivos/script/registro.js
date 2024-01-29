@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
         Users.push({ name: name, email: email, password: password });
         localStorage.setItem('users', JSON.stringify(Users));
         openModal();
-
         // Agora, usando uma função anônima para evitar o redirecionamento instantâneo
         setTimeout(() => {
             window.location.href = 'login.html';

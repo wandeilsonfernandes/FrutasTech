@@ -1,11 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-// Função do Modal
-function openModal() {
-    document.getElementById('overlay').style.display = 'block';
-    document.getElementById('modal').style.display = 'block';
-}  
-// Função Para fazer o Login
+// Login
 
 const loginForm = document.querySelector('#loginForm')
 loginForm.addEventListener('submit', (e)=>{
