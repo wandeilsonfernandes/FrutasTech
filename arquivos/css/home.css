@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Playfair+Display:wght@500&display=swap');
+
+  body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+
+  #fruits {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .fruit {
+    text-align: center;
+    margin: 10px;
+  }
+
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  #cart {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  #cart h2 {
+    color: #4CAF50;
+  }
+
+  #cart-items {
+    list-style: none;
+    padding: 0;
+  }
+
+  #cart-items li {
+    margin-bottom: 10px;
+  }
+  img {
+    width: 125px;
+    height: 125px;
+  }
+  #logout {
+          font-family: "Roboto", sans-serif;
+          text-transform: uppercase;
+          outline: 0;
+          background: #4ec4d9;
+          border: 2px;
+          color: #FFFFFF;
+          font-size: 14px;
+          cursor: pointer;
+      }
