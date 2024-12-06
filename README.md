@@ -50,7 +50,7 @@ Bem-vindo ao **Frutas Tech**, um site simples de login/registro que direciona o 
 
 ### 1️⃣ Clone o repositório
 ```bash
-git clone https://github.com/seurepositorio/frutas-tech.git
+git clone https://github.com/wandeilsonfernandes/FrutasTech.git
 cd frutas-tech
 ```
 
