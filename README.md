@@ -3,6 +3,16 @@
 Bem-vindo ao **Frutas Tech**, um site simples de login/registro que direciona o usuário para uma tela de compras ao fazer login. No registro, o sistema exibe uma mensagem de confirmação em alto relevo ("Cadastrado com Sucesso!"). O projeto é ideal para estudos de autenticação básica e armazenamento de dados no navegador usando **localStorage**.
 
 ---
+## Login 
+
+![Tela de Login](https://i.imgur.com/8FnN2f7.png)
+
+## Registro 
+![Tela de Cadastro de Usuários ](https://i.imgur.com/G7nVpJk.png)
+
+## Loja
+![Loja de Frutas](https://i.imgur.com/2lC5WXw.png)
+
 
 ## 🚀 Funcionalidades
 
